@@ -159,6 +159,7 @@ body {
 
   .main__button {
     font: 500 14px/16px roboto, arial, helvetica, sans-serif;
+    margin-bottom: 20px;
   }
 
   #menu__toggle {
