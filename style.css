@@ -111,15 +111,21 @@ body {
   display: inline-block;
   font: 500 14px/16px roboto, arial, helvetica, sans-serif;
   color: #fff;
-  background: #0056EC;
   padding: 14px 16px;
   text-decoration: none;
+  text-align: center;
   border-radius: 4px;
-  transition: opacity .5s;
+  background: #0056EC;
+  background-image: linear-gradient(to left,transparent,transparent 50%,#fff 50%,#fff);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
 }
 
 .main__button:hover {
-  opacity: .3;
+background-position: 0 0;
+color:#0056EC;
+border: 1px solid #0056EC;
 }
 
 @media (max-width: 768px) {
