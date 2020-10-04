@@ -109,23 +109,40 @@ body {
 
 .main__button {
   display: inline-block;
+  position: relative;
   font: 500 14px/16px roboto, arial, helvetica, sans-serif;
   color: #fff;
   padding: 14px 16px;
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
+  border: 1px solid #0056EC;
   background: #0056EC;
-  background-image: linear-gradient(to left,transparent,transparent 50%,#fff 50%,#fff);
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all .25s ease-in;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .main__button:hover {
-background-position: 0 0;
-color:#0056EC;
-border: 1px solid #0056EC;
+  color: #0056EC;
+}
+.main__button::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+}
+
+.main__button:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
 }
 
 @media (max-width: 768px) {
