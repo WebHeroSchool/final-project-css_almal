@@ -89,8 +89,9 @@ body {
 }
 
 .main {
-  padding: 0 58% 60px 0;
+  padding: 0 58% 100px 0;
   background: top right no-repeat url(img/Frame.svg);
+  background-size: 55%;
 }
 
 .main__title {
@@ -274,10 +275,6 @@ body {
     width: 91%;
   }
 
-  .main {
-    background-size: 60%;
-  }
-
   .main__title {
     font: bold 40px/56px pt_serif, arial, helvetica, sans-serif;
   }
@@ -293,6 +290,11 @@ body {
 @media (min-width: 1366px) {
   .wrapper {
     width: 68%;
+  }
+
+  .main {
+    padding-bottom: 150px;
+    background-size: 50%;
   }
 }
 
@@ -322,6 +324,7 @@ body {
   }
 
   .main {
-    padding: 0 65% 136px 0;
+    padding: 0 65% 320px 0;
+    background-size: 45%;
   }
 }
